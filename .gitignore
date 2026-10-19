@@ -1,0 +1,13 @@
+# Frontend
+my-app/node_modules/
+my-app/dist/
+
+# Mock backend
+mock-backend/__pycache__/
+mock-backend/*.pyc
+mock-backend/mock_db.json
+
+# General
+.env
+.DS_Store
+Thumbs.db

@@ -1,0 +1,119 @@
+.new-discovery {
+  position: relative;
+  min-height: 100%;
+  background: #f5f6fa;
+  padding: 0 0 80px 0;
+}
+
+/* Topbar */
+.nd-topbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.nd-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #3b5bdb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.nd-admin { font-weight: 500; color: #334155; }
+.nd-divider { color: #cbd5e1; }
+.nd-signout {
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 0;
+}
+.nd-signout:hover { text-decoration: underline; color: #1e293b; }
+
+/* Stepper */
+.nd-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 40px 28px;
+  gap: 0;
+}
+
+.nd-step-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  max-width: 140px;
+}
+
+.nd-step-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  background: #e2e8f0;
+  color: #94a3b8;
+  border: 2px solid #e2e8f0;
+  z-index: 1;
+  transition: all 0.2s;
+}
+
+.nd-step-circle.active {
+  background: #3b5bdb;
+  color: #fff;
+  border-color: #3b5bdb;
+}
+
+.nd-step-circle.done {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.nd-step-label {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.nd-step-label.active { color: #3b5bdb; font-weight: 600; }
+.nd-step-label.done   { color: #16a34a; font-weight: 500; }
+
+.nd-step-line {
+  position: absolute;
+  top: 16px;
+  left: calc(50% + 18px);
+  right: calc(-50% + 18px);
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 0;
+  width: calc(100% - 36px);
+  transition: background 0.2s;
+}
+
+.nd-step-line.done { background: #16a34a; }
+
+/* Content area */
+.nd-content {
+  padding: 0 48px;
+}

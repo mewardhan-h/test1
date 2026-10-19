@@ -1,0 +1,43 @@
+.ingest-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f5f6fa;
+}
+
+.ingest-tabs {
+  display: flex;
+  gap: 0;
+  padding: 20px 32px 0 32px;
+  border-bottom: 2px solid #e2e8f0;
+  background: #fff;
+}
+
+.ingest-tab {
+  padding: 12px 28px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.ingest-tab:hover {
+  color: #475569;
+}
+
+.ingest-tab.active {
+  color: #3b5bdb;
+  border-bottom: 2px solid #3b5bdb;
+  font-weight: 600;
+}
+
+.ingest-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px;
+}
